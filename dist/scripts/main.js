@@ -10,10 +10,11 @@
 		$('#productform').on('submit', function(event){
 			event.preventDefault();
 			$('#content').html('<center>Loading...</center>');
-			var mediatype = 'software'; // Options can be 'music', 'books', 'movies', or 'software'
-			var searchterm = $('#s').val(); // For field for input.
+			var entity = 'software'; // Options can be 'music', 'books', 'movies', or 'software'
+			var searchterm = $('#search').val(); // For field for input.
 			var requrl = 'https://itunes.apple.com/search?';
-			var fullurl = requrl + '&entity=' + mediatype + '&term=' + searchterm;
+			var affiliatetoken = '&at=10l3KX&ct=search';
+			var fullurl = requrl + '&entity=' + entity + '&term=' + searchterm;
 			$.getJSON(fullurl + '&callback=?', function(data) {
 				var html = '<ul class="tracks">\n';
 				var resultCount = data.resultCount; // Grab the result count
@@ -32,7 +33,7 @@
 				for (var n = 0; n < resultCount; n++) {
 					productName = data.results[n].trackName;
 					authorName = data.results[n].artistName;
-					itunesProductUrl = data.results[n].trackViewUrl;
+					itunesProductUrl = data.results[n].trackViewUrl + affiliatetoken;
 					sellerUrl = data.results[n].sellerUrl;
 					iconSize512 = data.results[n].artworkUrl512;
 					productPrice = data.results[n].formattedPrice;
