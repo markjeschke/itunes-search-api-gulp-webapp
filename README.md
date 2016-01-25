@@ -49,22 +49,7 @@ Run this command to build static code to the /dist folder for client delivery.
 
     gulp build
 
- If you wish to build the project with the HTML, CSS, and JS unminified, please comment lines #49, #50, and #53 in the gulpfile.babel.js file.
-
- <code>
- 	gulp.task('html', ['styles'], () => {
-  const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
-
-  return gulp.src('app/*.html')
-    .pipe(assets)
-    .pipe($.if('*.js', $.uglify())) // <-- comment this line, if you don't wish to minify the code.
-    .pipe($.if('*.css', $.minifyCss({compatibility: '*'}))) // <-- comment this line, if you don't wish to minify the code.
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true}))) // <-- comment this line, if you don't wish to minify the code.
-    .pipe(gulp.dest('dist'));
-});
-</code>
+ If you wish to build the project with the HTML, CSS, and JS unminified, please comment lines #49, #50, and #53 in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L46) file.
 
 
 
