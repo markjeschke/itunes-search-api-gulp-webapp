@@ -46,11 +46,11 @@ gulp.task('html', ['styles'], () => {
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    //.pipe($.if('*.js', $.uglify()))
-    //.pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
+    .pipe($.if('*.js', $.uglify())) // <-- comment this line, if you don't wish to minify the code.
+    .pipe($.if('*.css', $.minifyCss({compatibility: '*'}))) // <-- comment this line, if you don't wish to minify the code.
     .pipe(assets.restore())
     .pipe($.useref())
-    //.pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true}))) // <-- comment this line, if you don't wish to minify the code.
     .pipe(gulp.dest('dist'));
 });
 
