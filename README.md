@@ -49,7 +49,7 @@ Run this command to build static code to the /dist folder for client delivery.
 
     gulp build
 
- If you wish to build the project with the HTML, CSS, and JS unminified, please comment lines #49, #50, and #53 in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L46) file.
+ If you wish to build the project with the HTML, CSS, and JS unminified, please comment lines [#49](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L49), [#50](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L50), and [#53](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L53) in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js) file.
 
 
 
