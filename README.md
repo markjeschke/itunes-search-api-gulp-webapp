@@ -24,21 +24,25 @@ Follow instructions for your machine from the [Node.js website](https://nodejs.o
 
 ## Installation from GitHub repo
 
-Using the command line, cd to the location where you'd like to install this project. Then, enter: 
+### Clone the repo
+
+Using the command line, cd (change directory) to the location where you'd like to install this project. Then, copy and paste the following git clone command: 
 
 	git clone git@github.com:markjeschke/itunes-search-api-gulp-webapp.git 
 
-Press the 'return' key to begin the cloning process.
+Press the 'return' key to download and begin the cloning process.
 
 ### Install project dependencies
 
-You must run these from within this project directory. 
+* CD into the newly cloned repo called, 'itunes-search-api-gulp-webapp'
+* Install the following project dependencies. It is important that they are run from within this project's directory:
 
 	npm install
 	bower install
 
+## Starting the project from within your browser
 
-## Starting Front-end development in your browser
+Using the command line, 
 
     gulp serve
 
@@ -52,13 +56,13 @@ If adding plugins, use bower install whenever possible.  For example:
 
 Then reference the newly installed component in the appropriate file.
 
-## Delivery to Client
+## Build a minified version for your website
 
 Run this command to build static code to the /dist folder for client delivery.
 
     gulp build
 
- If you wish to build the project with the HTML, CSS, and JS unminified, please comment lines [#49](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L49), [#50](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L50), and [#53](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L53) in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js) file.
+ If you wish to build the project with the HTML, CSS, and JS unminified (uncompressed) for development and debugging purposes, please comment or remove lines [#49](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L49), [#50](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L50), and [#53](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L53) in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js) file.
 
 
 
