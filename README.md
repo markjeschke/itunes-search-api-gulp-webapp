@@ -24,7 +24,11 @@ Follow instructions for your machine from the [Node.js website](https://nodejs.o
 
 ## Installation from GitHub repo
 
-Using the command line, cd to the location where you'd like to install this project. Then, enter: git clone git@github.com:markjeschke/itunes-search-api-gulp-webapp.git and press the 'return' key.
+Using the command line, cd to the location where you'd like to install this project. Then, enter: 
+
+	git clone git@github.com:markjeschke/itunes-search-api-gulp-webapp.git 
+
+Press the 'return' key to begin the cloning process.
 
 ### Install project dependencies
 
