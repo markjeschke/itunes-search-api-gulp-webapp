@@ -4,7 +4,7 @@ Add an iTunes search input to your webpage that will display a list of apps with
 
 ## Front-end Setup
 
- This code example was generated via [gulp-webapp](https://github.com/yeoman/generator-gulp-webapp). Before installing project dependencies, the following tools need to be installed:
+ This code scaffolding was generated via [gulp-webapp](https://github.com/yeoman/generator-gulp-webapp). Before installing project dependencies, the following tools need to be installed on your machine:
 
 - [Node.js](http://nodejs.org) and [npm](http://npmjs.com)
 - [Bower](http://bower.io)
@@ -22,18 +22,23 @@ Follow instructions for your machine from the [Node.js website](https://nodejs.o
 
     npm install -g gulp
 
+## Installation from GitHub repo
+
+Using the command line, cd to the location where you'd like to install this project. Then, enter: git clone git@github.com:markjeschke/itunes-search-api-gulp-webapp.git and press the 'return' key.
+
 ### Install project dependencies
-Must run these from inside each campaign directory. 
+
+You must run these from within this project directory. 
 
 	npm install
 	bower install
 
 
-## Starting Front-end Dev in your browser
+## Starting Front-end development in your browser
 
     gulp serve
 
-This will start the local webserver while also watching JS and CSS files for any changes.  A browser should open up with live reload.
+This will start the local webserver while also watching JS and CSS files for any changes.  A browser should open up with live reload. Please note that this project utilizes [Sass](http://sass-lang.com/) to compile its CSS, [Bootstrap](https://getbootstrap.com/) to assist with responsive layout, and [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) for vector-based icons.
 
 ## Adding frameworks (via Bower)
 
