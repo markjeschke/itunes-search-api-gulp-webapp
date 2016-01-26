@@ -56,11 +56,13 @@ If adding plugins, use bower install whenever possible.  For example:
 
 Then reference the newly installed component in the appropriate file.
 
-## Build a minified version for your website
+## Build a stand-alone optimized version for your website
 
-Run this command to build static code to the /dist folder for client delivery.
+Run this command to build static code to the /dist folder for yourself or for client delivery.
 
     gulp build
+
+## Build a stand-alone version for debugging and development
 
  If you wish to build the project with the HTML, CSS, and JS unminified (uncompressed) for development and debugging purposes, please comment or remove lines [#49](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L49), [#50](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L50), and [#53](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js#L53) in the [gulpfile.babel.js](https://github.com/markjeschke/itunes-search-api-gulp-webapp/blob/master/gulpfile.babel.js) file.
 
