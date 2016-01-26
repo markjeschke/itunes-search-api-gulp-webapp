@@ -1,6 +1,6 @@
 # iTunes API Search Results Example
 
-Add an iTunes search input to your webpage that will display a list of apps with their icons, descriptions, author, pricing, and screenshots.
+Add an iTunes app search field to your webpage, so that visitors can quickly view app information, such as their icons, descriptions, author, pricing, and screenshots.
 
 ## Front-end Setup
 

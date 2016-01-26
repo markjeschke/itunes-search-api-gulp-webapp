@@ -61,7 +61,6 @@
 					screenshotUrlsCount = screenshotUrls.length;
 					// Cycle through the array of images.
 					for (var i = 0; i < screenshotUrlsCount; i++) {
-						//console.log('screenshotUrls[' + i + ']: ' + screenshotUrls[i]);
 						html += '<img class="screenshots" src="' + screenshotUrls[i] + '" width="320" height="auto" alt="Screenshot ' + [i] + ' of ' + productName + '" />';
 					}
 					// If the app contains iPad screenshot, display them.
@@ -70,7 +69,6 @@
 						ipadScreenshotUrlsCount = ipadScreenshotUrls.length;
 						// Cycle through the array of images.
 						for (var s = 0; s < ipadScreenshotUrlsCount; s++){
-							//console.log('ipadScreenshotUrls[' + s + ']: ' + ipadScreenshotUrls[s]);
 							html += '<img class="screenshots" src="' + ipadScreenshotUrls[s] + '" width="320" height="auto" alt="Screenshot ' + [s] + ' of ' + productName + '" />';
 						}
 					}
@@ -80,7 +78,6 @@
 					html += '<h4>Support Devices</h4>';
 					html += '<ul>';
 					for (var d = 0; d < supportedDevicesCount; d++) {
-						console.log('supportedDevices[' + d + ']: ' + supportedDevices[d]);
 						html += supportedDevices[d] + '<br />';
 					}
 					html += '</ul>'; // Close unordered list.
